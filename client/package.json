@@ -50,7 +50,7 @@
     "dev": "cross-env FE_ALONE=false craco start",
     "dev:mock": "cross-env FE_ALONE=true craco start",
     "build": "cross-env FE_ALONE=false craco build",
-    "build:gh-pages": "cross-env FE_ALONE=false BASENAME='/pp' craco build",
+    "build:gh-pages": "cross-env FE_ALONE=false BASENAME='/scrum-poker' craco build",
     "test": "craco test",
     "eject": "react-scripts eject"
   },
