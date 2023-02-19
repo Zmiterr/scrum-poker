@@ -1,12 +1,12 @@
-import DOMPurify from 'dompurify';
+// import DOMPurify from 'dompurify';
 
-// ! TODO (no95typem)  - not working on the server
+// ! TODO  - not working on the server
 
 export const purifyInNode = <T>(thing: T): T => thing;
 
 export const purifyInBrowser = <T>(thing: T): T => {
-  if (typeof thing === 'string' || thing instanceof Node)
-    return DOMPurify.sanitize(thing) as unknown as T;
+  // if (typeof thing === 'string' || thing instanceof Node)
+  //   return DOMPurify.sanitize(thing) as unknown as T;
 
   if (typeof thing === 'object' && thing !== null) {
     const record = thing as Record<string, unknown>;
