@@ -18,7 +18,7 @@ module.exports = {
   entry: './src/entry.ts',
   output: {
     filename: 'server.js',
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'public'),
   },
   module: {
     rules: [
@@ -41,8 +41,8 @@ module.exports = {
       }),
     isDev &&
       new NodemonPlugin({
-        script: './build/server.js',
-        watch: path.resolve('./build'),
+        script: './public/server.js',
+        watch: path.resolve('./public'),
         // args: ['demo'],
         // nodeArgs: ['--debug=9222'],
         ignore: ['*.js.map'],
