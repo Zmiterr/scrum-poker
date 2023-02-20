@@ -54,7 +54,7 @@
     "test": "craco test",
     "eject": "react-scripts eject"
   },
-  "homepage": "http://zmiterr.github.io/scrum-poker",
+  "homepage": "https://zmiterr.github.io/scrum-poker",
   "browserslist": {
     "production": [
       ">0.2%",
