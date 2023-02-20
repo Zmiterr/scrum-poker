@@ -6,8 +6,8 @@ import missionImpossible from './assets/images/undraw/mission-impossible.svg';
 
 import logo from './assets/images/shared/logo.svg';
 import fastTechLogo from './assets/images/shared/fastTech.png';
-import back01 from './assets/images/card-back-01.png';
-import back02 from './assets/images/card-back-02.png';
+import back01 from './assets/images/shared/card-back-01.png';
+import back02 from './assets/images/shared/card-back-02.png';
 
 const UNSURE_CARD_DATA = { value: 'Unsure', base64: faqMod };
 export const UNKNOWN_CARD_DATA = UNSURE_CARD_DATA; // TODO REPLACE
@@ -20,11 +20,11 @@ export const CARDS_DECKS: Record<string, CardData[]> = {
     { value: '3' },
     { value: '5' },
     { value: '8' },
-    { value: '13' },
-    { value: '21' },
-    { value: '34' },
-    { value: '55' },
-    { value: '89' },
+    // { value: '13' },
+    // { value: '21' },
+    // { value: '34' },
+    // { value: '55' },
+    // { value: '89' },
     UNSURE_CARD_DATA,
     { value: 'We need a break', base64: pizzaSharing },
     { value: 'Impossible', base64: missionImpossible },
