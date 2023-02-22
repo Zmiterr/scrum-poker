@@ -4,4 +4,4 @@ export const MAX_CHAT_ENTRIES = 50;
 
 export const API_URL = IS_PROD
   ? 'https://planning-poker-ookkd0l0i-zmiterr.vercel.app'
-  : 'ws://localhost:9000';
+  : 'ws://192.168.100.134:9000';
