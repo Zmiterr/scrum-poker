@@ -9,17 +9,8 @@ import {
   useColorMode,
   Box,
   Badge,
-  PopoverTrigger,
-  Portal,
-  PopoverContent,
-  PopoverBody,
-  UnorderedList,
-  ListItem,
-  Link,
-  Text,
-  Popover,
 } from '@chakra-ui/react';
-import { ChatIcon, InfoOutlineIcon } from '@chakra-ui/icons';
+import { ChatIcon } from '@chakra-ui/icons';
 import logo from '../../assets/images/shared/logo.svg';
 
 import { useAppDispatch, useTypedSelector } from '../../redux/store';
@@ -28,8 +19,6 @@ import { tryToToggleChatState } from '../../redux/slices/chat';
 import { ColorModeSwitcher } from '../../containers/ColorModeSwitcher/ColorModeSwitcher';
 import { AppMenu } from '../../containers/AppMenu/AppMenu';
 import { NotificationPopover } from '../NotificationPopover/NotificationPopover';
-import { ChakraLogo } from '../../components/ChakraLogo/ChakraLogo';
-import { BsChatQuote } from 'react-icons/bs';
 import About from '../../components/About/About';
 
 export const Header = (): JSX.Element => {

@@ -94,7 +94,8 @@ export class IDBMan {
                 });
                 checkOpened
                   .catch(() => chargeCheckOpened())
-                  .then(() => resolveOnBlocked(true)); // TODO: Add popup with 'Do you have any other opened tabs? Close it please!'
+                  .then(() => resolveOnBlocked(true));
+                // TODO: Add popup with 'Do you have any other opened tabs? Close it please!'
               };
               chargeCheckOpened();
             });

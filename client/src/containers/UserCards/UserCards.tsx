@@ -114,11 +114,12 @@ const UserCards = (props: IUserCards): JSX.Element => {
 
   const cMode = useColorMode();
 
-  const isEnoughUsersForKick = Object.values(members).filter(
-    m =>
-      m.userState === USER_STATES.CONNECTED &&
-      m.userRole === USER_ROLES.PLAYER,
-  ).length > 2;
+  const isEnoughUsersForKick =
+    Object.values(members).filter(
+      m =>
+        m.userState === USER_STATES.CONNECTED &&
+        m.userRole === USER_ROLES.PLAYER,
+    ).length > 2;
 
   const selectedMemebers = Object.entries(members).filter(([id, member]) =>
     isCorrectMember(id, member),

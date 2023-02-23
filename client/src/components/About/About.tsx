@@ -10,7 +10,7 @@ import {
   Text,
   UnorderedList,
 } from '@chakra-ui/react';
-import React, { useRef } from 'react';
+import React from 'react';
 import { InfoOutlineIcon } from '@chakra-ui/icons';
 import { ChakraLogo } from '../ChakraLogo/ChakraLogo';
 import { BsChatQuote } from 'react-icons/bs';

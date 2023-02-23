@@ -1,12 +1,4 @@
-import {
-  Heading,
-  Button,
-  Input,
-  Flex,
-  useMediaQuery,
-  Link,
-  Text,
-} from '@chakra-ui/react';
+import { Heading, Button, Input, Flex, useMediaQuery } from '@chakra-ui/react';
 // import pokerPlaning from '../../assets/images/shared'
 import { UserRole } from '../../../../shared/types/user/user-role';
 import { USER_ROLES } from '../../../../shared/types/user/user-role';
@@ -22,7 +14,6 @@ import { ReactComponent as UndrawScrumBoard } from '../../assets/images/undraw/s
 import { ReactComponent as UndrawNewIdeas } from '../../assets/images/undraw/new-ideas.svg';
 import { ReactComponent as UndrawLogin } from '../../assets/images/undraw/login.svg';
 import { addNotifRec, INotification } from '../../redux/slices/notifications';
-import { FaYoutube } from 'react-icons/fa';
 
 interface IStartPageContentProps {
   onPopupCalled: (forRole: UserRole) => void;
@@ -150,7 +141,6 @@ const StartPageContent = ({
         </Flex>
         {isLargerThan860 && <UndrawScrumBoard style={{ maxWidth: '50%' }} />}
       </Flex>
-
     </Flex>
   );
 };

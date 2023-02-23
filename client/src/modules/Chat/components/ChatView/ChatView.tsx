@@ -32,11 +32,12 @@ export const ChatView = () => {
     };
   };
 
-  const isEnoughUsersForKick = Object.values(sessionData.members).filter(
-    m =>
-      m.userState === USER_STATES.CONNECTED &&
-      m.userRole === USER_ROLES.PLAYER,
-  ).length > 2;
+  const isEnoughUsersForKick =
+    Object.values(sessionData.members).filter(
+      m =>
+        m.userState === USER_STATES.CONNECTED &&
+        m.userRole === USER_ROLES.PLAYER,
+    ).length > 2;
 
   const convertTime = (dateNow: number) => {
     const date = new Date(dateNow);
