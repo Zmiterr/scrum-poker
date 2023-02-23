@@ -18,9 +18,9 @@
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.32.0",
+    "eslint": "^8.34.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-config-react-app": "^6.0.0",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-flowtype": "^5.9.2",
     "eslint-plugin-import": "^2.24.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -32,6 +32,7 @@
     "prettier": "^2.3.2",
     "typescript": "^4.4.3"
   },
+  "extends": ["react-app"],
   "dependencies": {
     "@types/dompurify": "^2.2.3",
     "dompurify": "^2.3.1"
